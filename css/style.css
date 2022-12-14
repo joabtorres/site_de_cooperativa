@@ -1,0 +1,188 @@
+/* 
+    Created on : 23/02/2018, 20:07:15
+    Author     : joab Torres Alencar
+*/
+html, body {height:100%;}
+body{
+    background-color:  #F8FFFB ;
+}
+#toTop{
+    display: none!important;
+}
+.clear{
+    display: block;
+    clear: both;
+}
+@media(min-width: 780px){
+  .container-fluid{padding:  0 50px;}
+}
+/*classes globais*/
+.img-center{
+    display: block;
+    margin: auto;
+}
+.img-float-left{
+    float:  left;
+    margin-right: 10px;
+}
+.img-float-right{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.bg_paralax{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.text-indent{
+    text-indent: 40px;
+}
+.font-bold{
+    font-weight: bold;
+}
+.font-color-green{
+    color:#2C853B;
+}
+.font-color-blue{color:#0091e1}
+.bg-green{
+    background-color: #2C853B;
+    color: #F8FFFB;
+}
+.bg_blue{
+    background-color: #0091e1;
+    color: #F8FFFB;
+}
+.bg-white{
+    color: #333333;
+    background-color:#f8f9ff;
+}
+/*header*/
+
+#navbar-header-menu{
+    border-bottom: 5px solid #2C853B;
+}
+
+#logotipo-menu{
+    width: 101px;
+    height: 40px;
+    background-image: url('../imagens/logotipo-header.png');
+    background-position: -2px 5px;
+    background-repeat: no-repeat;
+
+}
+@media(min-width: 1920px){
+    #logotipo-menu{
+        background-image: url('../imagens/logotipo-header.png');
+        background-position: -2px 5px;
+        background-repeat: no-repeat;
+    }
+}
+#navbar-menu-principal .navbar-nav li a:hover{
+    background-color: #2C853B;
+    color: #F8FFFB;
+}
+/*containers*/
+#sobre, #diretoria, #cooperados, #contato, #sites, #rodape, #disk_taxi{
+    padding: 30px 0;
+}
+/*Inicial*/
+
+#banner-inicial{
+    background-image: url('../imagens/banner-inicial.jpg');
+    color: white;
+    padding: 50px 0;
+}
+@media(min-width: 1900px){
+    #banner-inicial{
+        background-image: url('../imagens/banner-inicial_1920.jpg');
+    }
+}
+#banner-inicial img{
+    margin-top: 0px;
+}
+#banner-inicial h4{
+    margin-top: 50px;
+}
+
+#sobre .list-figure{
+    display: block;
+}
+#sobre .list-figure figcaption *{
+    margin: 0;
+    padding: 0;
+}
+
+#cooperados #collapseTiposCooperados a{
+    display: block;
+}
+#cooperados #collapseTiposCooperados a:hover, #cooperados #collapseTiposCooperados a:active, #cooperados #collapseTiposCooperados a:enabled{
+    text-decoration: none;
+}
+/*************************************
+                       LINKS IMPORTANTES
+**************************************/
+
+#sites td .a-text-center{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #2C853B;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#sites .list-de-links td{
+    background-color: #F8FFFB;
+}
+
+#sites .list-de-links td:hover{
+    background-color: #2C853B;
+}
+#sites td .a-text-center:hover{
+    text-decoration: none;
+    color: #F8FFFB;
+}
+#contato #mapa_contato{
+    width: 100%;
+    height: 300px;
+}
+#contato #form-contato .form-control{
+    border-radius: 0;
+    margin-bottom: 10px;
+    border-color: #006A35;
+    background-color: #F8FFFB;
+    min-width: 100%;
+}
+#contato #form-contato .btn{
+    border-radius: 0;
+}
+#rodape{
+    padding: 20px 0;
+}
+#rodape > div{
+    border-top: 3px solid #F8FFFB; 
+    border-bottom: 3px solid #F8FFFB; 
+}
+#rodape p{
+    margin: 5px auto;
+}
+/*disk taxi*/
+#disk_taxi{
+    padding-top: 50px;
+}
+@media(max-width: 970px){
+    .img-float-left, .img-float-right{
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+    #logotipo-menu{
+        margin-left: 10px;
+    }
+}
